@@ -320,7 +320,7 @@ class MudiExperience {
     /** Petición para renderizar los elementos Mudi */
     mudiRequest(skuNumber) {
 
-        let container = document.querySelector('.powsa-componentes-0-x-productImagesGallerySwiperContainer');
+        let container = document.querySelector('.buttonMudiExperience');
         if (container) {
             this.experienceOn(skuNumber, container)
         }
