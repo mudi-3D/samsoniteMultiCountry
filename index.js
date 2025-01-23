@@ -24,7 +24,7 @@ class MudiExperience {
                     method: 'POST',
                     headers: {
                         "Content-type": "application/json",
-                        "tokenapi": "z4GZ5nTzwUenEnNYY6Lt"
+                        "tokenapi": "AuDLEFvjQwDJHmCYYb3z"
                     },
                     body: JSON.stringify(myBody)
                 })
@@ -322,7 +322,7 @@ class MudiExperience {
 
         let container = document.querySelector('.buttonMudiExperience');
         if (container) {
-            this.experienceOn(skuNumber, container)
+            this.experienceOn('8622910411U_MEX', container)
         }
         else if (this.valueRequest > 5000) { return }
         else {
