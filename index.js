@@ -46,7 +46,7 @@ class MudiExperience {
             link = document.createElement('LINK');
         link.setAttribute('rel', 'stylesheet');
         link.id = "stylesMudiGeneral";
-        link.href = `https://cdn.jsdelivr.net/gh/mudi-3D/pepeganga@latest/index.css`; /* custom this path */
+        link.href = `https://cdn.jsdelivr.net/gh/mudi-3D/samsoniteMultiCountry@latest/index.css`; /* custom this path */
 
         document.head.appendChild(link)
     };
