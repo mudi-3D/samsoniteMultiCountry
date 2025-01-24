@@ -18,11 +18,8 @@
 }
 
 .btnsMudiContainer {
-    position: absolute;
     width: max-content;
     height: max-content;
-    right: 88%;
-    top: 12%;
     z-index: 10;
 }
 
