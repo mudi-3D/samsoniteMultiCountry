@@ -104,7 +104,8 @@ class MudiExperience {
         fragment.appendChild(containerBtns)
 
         /** Add DOM */
-        this.fatherContainer.appendChild(fragment)
+        this.fatherContainer[0].appendChild(fragment)
+        this.fatherContainer[1].appendChild(fragment)
     };
 
     /** Create Modal ✔️ */
@@ -320,7 +321,7 @@ class MudiExperience {
     /** Petición para renderizar los elementos Mudi */
     mudiRequest(skuNumber) {
 
-        let container = document.querySelector('.buttonMudiExperience');
+        let container = document.querySelectorAll('.buttonMudiExperience');
         if (container) {
             this.experienceOn('8622910411U_MEX', container)
         }
