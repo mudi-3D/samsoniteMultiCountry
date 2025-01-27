@@ -104,8 +104,10 @@ class MudiExperience {
         fragment.appendChild(containerBtns)
 
         /** Add DOM */
-        this.fatherContainer[0].appendChild(fragment)
-        this.fatherContainer[1].appendChild(fragment)
+        this.fatherContainer.forEach((node)=>{
+            node.appendChild(fragment)
+            console.log(node)
+        })
     };
 
     /** Create Modal ✔️ */
