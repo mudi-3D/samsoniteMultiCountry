@@ -55,7 +55,7 @@ class MudiExperience {
     createBtns() {
 
         /** Verify btns */
-        // document.body.querySelector('.btnsMudiContainer') && document.body.querySelector('.btnsMudiContainer').remove();
+        document.body.querySelector('.btnsMudiContainer') && document.body.querySelector('.btnsMudiContainer').remove();
 
         /** Create Fragment */
         const fragment = document.createDocumentFragment();
