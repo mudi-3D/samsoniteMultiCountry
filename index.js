@@ -261,7 +261,7 @@ class MudiExperiencePDP {
         this.fatherContainer = fatherContainer
 
         try {
-            await this.conectServer(`${skuNumber}`);
+            await this.conectServer(`${skuNumber}_MEX`);
             this.createStyles();
             fatherContainer[sizeDevice].style.display = "flex";
             fatherContainer[sizeDevice].addEventListener('click', () => {
