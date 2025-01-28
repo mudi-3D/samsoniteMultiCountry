@@ -265,7 +265,7 @@ class MudiExperiencePDP {
             this.createStyles();
             fatherContainer[sizeDevice].style.display = "flex";
             fatherContainer[sizeDevice].addEventListener('click', () => {
-                const modal = new ModalMudi(data, this.color, this.skuNumber);
+                const modal = new ModalMudi( this.dataServer , this.color, this.skuNumber);
                 modal.createModalPDP()
 
                 /** Enviamos el evento al GTM */
