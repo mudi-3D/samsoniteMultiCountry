@@ -230,7 +230,6 @@ class MudiExperiencePDP {
 
             if (response.data.length == 0) {
                 console.warn(`El sku ${this.skuNumber} no existe en la base de datos de Mudi`);
-                return
             };
 
             this.dataServer = response.data[0];
@@ -262,6 +261,7 @@ class MudiExperiencePDP {
 
         try {
             await this.conectServer(`${skuNumber}_MEX`);
+            if( this.dataServer.length == 0 ) { fatherContainer[sizeDevice].style.display = "none"; return }
             this.createStyles();
             fatherContainer[sizeDevice].style.display = "flex";
             fatherContainer[sizeDevice].addEventListener('click', () => {
@@ -273,7 +273,6 @@ class MudiExperiencePDP {
             })
 
         } catch (error) {
-            fatherContainer[sizeDevice].style.display = "none";
             console.error(`Mudi Error:\n${error}`);
         }
 
